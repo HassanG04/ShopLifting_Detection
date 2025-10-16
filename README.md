@@ -39,4 +39,12 @@ Development:
 | **gunicorn / waitress** *(optional)* | For deploying Flask app in production (instead of `flask run`).        |
 
 Command to install all of the used libraries if you want to run the code yourself:
+
 pip install torch torchvision flask opencv-python numpy
+
+When in need to test/run the application open the folder and type in the search CMD
+then type
+
+python app.py
+
+no need to re-train the model since it already exists
