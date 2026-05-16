@@ -1,6 +1,31 @@
-flask>=3.0
-torch>=2.1
-torchvision>=0.16
-numpy>=1.26
-opencv-python>=4.9
-Pillow>=10.2
+# --- Computer Vision & Image Processing ---
+opencv-python>=4.8.0
+# Legacy mp.solutions removed, Django inference uses YOLOv11 for pose.
+ultralytics>=8.0.0
+
+# --- Data Manipulation & Math ---
+# Use NumPy 2.x if your ensemble .joblib was saved with NumPy 2 (pickles reference numpy._core.*).
+# If you instead see MT19937 / BitGenerator errors on an old bundle, use NumPy 1.26.x and re-save the model.
+numpy>=2.0.0,<3.0.0
+pandas>=2.1.0
+
+# --- Machine Learning & Evaluation ---
+scikit-learn>=1.4.0
+joblib>=1.4.0
+
+# --- Deep Learning (Two-Stream Models) ---
+torch>=2.0.0
+torchvision>=0.15.0
+
+# --- Visualization ---
+matplotlib>=3.8.0
+seaborn>=0.12.0
+
+# --- Web Deployment ---
+Django>=4.2.0
+celery>=5.3.0
+redis>=5.0.0
+
+# --- Notebook Environment ---
+jupyter>=1.0.0
+ipykernel>=6.0.0
